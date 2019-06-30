@@ -1,10 +1,10 @@
 <!-- form_for sets up the url where the form will be sent -->
 <%= form_for @article do |f| %>
   <%= f.label 'Article Title' %><br>
-  <%= f.text_field :'[article][title]' %><br>
+  <%= f.text_field :title %><br>
  
   <%= f.label 'Article Description' %><br>
-  <%= f.text_area :'[article][description]' %><br>
+  <%= f.text_area :description %><br>
  
  <!-- when submitted, form is routed to update action -->
   <%= f.submit "Submit Article" %>
